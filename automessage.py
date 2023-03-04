@@ -11,8 +11,8 @@ from selenium.webdriver.chrome.options import Options
 import os
 
 #open a chrome tab with saved login info
-PATH = "/Users/shyamramesh/Desktop/codeStuff/chromedriver"
-os.system("open /Users/shyamramesh/Desktop/codeStuff/debugMode")
+PATH = "/Users/"  # enter path here
+os.system("open /Users/") # enter path here
 time.sleep(4)
 
 
@@ -24,7 +24,7 @@ opt.add_experimental_option("debuggerAddress", "localhost:9222")
 driver=webdriver.Chrome(executable_path=PATH, options=opt)
 
 # open google chat (direct link to at home modz chat)
-driver.get("https://mail.google.com/chat/u/0/#chat/space/AAAAXoXg9IE")
+driver.get("https://mail.google.com/chat") # enter google chat link here
 time.sleep(4)
 
 
